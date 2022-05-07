@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
+            android:inputType="textEmailAddress"
             android:id="@+id/email"
             android:layout_marginTop="20dp"
             android:textSize="20sp"
@@ -26,6 +27,7 @@
             android:layout_height="wrap_content" />
 
         <EditText
+            android:inputType="textEmailSubject"
             android:id="@+id/theme"
             android:hint="theme"
             android:textSize="20sp"

@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:"+ email.getText().toString()));
+                Intent intent=new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"+ email.getText().toString()));
                 intent.putExtra(Intent.EXTRA_SUBJECT, theme.getText().toString());
                 intent.putExtra(Intent.EXTRA_TEXT, text.getText().toString());
                 startActivity(intent);
